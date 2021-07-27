@@ -1,0 +1,16 @@
+@import './buttons.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+body {
+    background-color: #465657;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.wrapper {
+    
+    margin: auto;
+    max-inline-size: 900px;
+}
+
+.player video {
+    inline-size: 100%;
+}

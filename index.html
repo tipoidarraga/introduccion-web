@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./buttons.css"> -->
+</head>
+<body>
+    <h2>Música para trabajar</h2>
+
+    <div class="wrapper">
+        <div class="player">
+            <button class="button" id = "backward" aria-label="Atrasar 10 segundos" title="Adelantar"></button>
+            <button class="button" hidden id = "pause" aria-label="Pausar" title="Pausar"></button>
+            <button class="button" id = "play" aria-label="Reproducir" title="Reproducir"></button>
+            <button class="button" id = "forward" aria-label="Adelantar 10 segundos" title="Adelantar"></button>
+            <video id="video" controls poster="/images/poster.jpg" muted width="600" src="../videos/lofi.mp4"></video>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+    
+</body>
+</html>
