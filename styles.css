@@ -1,16 +1,63 @@
-@import './buttons.css';
+@import '/buttons.css';
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 body {
-    background-color: #465657;
+    background-color: #26B3BD;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .wrapper {
-    
     margin: auto;
     max-inline-size: 900px;
 }
 
 .player video {
     inline-size: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+.player {
+    position: relative;
+    margin-block-start: 100px;
+    /* border: 10px solid red; */
+}
+
+.player-title {
+    color: white;
+    position: absolute;
+    inset-block-start: 0px;
+    margin: 0;
+    padding: 10px;
+}
+
+.player-actions {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-progress {
+    /* background-color: rgb(0, 0, 0); */
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.player-progress input {
+    flex: 1;
+}
+
+.player-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .5 opacity;
+}
+
+.player:hover .player-overlay {
+     opacity: 1;
 }
